@@ -336,7 +336,7 @@ const useGame = () => {
     setTimeout(() => {
       slotAreaVal.value = newSlotAreaVal;
       currSlotNum.value = tempSlotNum;
-    }, 400);
+    }, 100);
     // 游戏结束
     if (tempSlotNum >= gameConfig.slotNum) {
       gameStatus.value = 2;
