@@ -2,7 +2,7 @@
   <div id="indexPage">
     <div class="header">
       <img src="../assets/index_logo.png" alt="" />
-      <div class="title">🎉 妆了个妆 🎉</div>
+      <div class="title">🎉 Duang了个Duang 🎉</div>
       <div class="desc">低配版羊了个羊小游戏，仅供消遣</div>
     </div>
     <div class="list">
