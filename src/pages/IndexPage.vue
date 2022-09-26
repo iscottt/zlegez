@@ -90,7 +90,7 @@ const toGamePage = (config?: GameConfigType) => {
 .post .img {
   flex-shrink: 0;
   width: 4.5em;
-  height: 4em;
+  height: 4.5em;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
