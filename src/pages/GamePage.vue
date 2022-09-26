@@ -150,6 +150,7 @@ onMounted(() => {
   align-items: flex-end;
   flex-direction: column !important;
   align-items: center;
+  height: 100px;
 }
 
 .random-area {
