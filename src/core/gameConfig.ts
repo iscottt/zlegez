@@ -1,27 +1,6 @@
-// 口红数组
-const animals = [
-  'BB%E9%9C%9C.png',
-  '%E4%B9%9D%E5%AE%AB%E6%A0%BC%E7%9C%BC%E5%BD%B1.png',
-  '%E5%8D%B8%E5%A6%86%E5%B7%BE.png',
-  '%E5%8D%B8%E5%A6%86%E6%B2%B9.png',
-  '%E5%8F%A3%E7%BA%A2.png',
-  '%E5%94%87%E9%87%89.png',
-  '%E5%A6%86%E5%89%8D%E4%B9%B3.png',
-  '%E6%B0%94%E5%9E%ABBB.png',
-  '%E7%9C%89%E7%AC%94.png',
-  '%E7%9D%AB%E6%AF%9B%E8%86%8F.png',
-  '%E7%B2%89%E5%BA%95%E6%B6%B2.png',
-  '%E7%B2%BE%E5%8D%8E%E6%B6%B2.png',
-  '%E7%B2%BE%E5%8D%8E%E9%9C%B2.png',
-  '%E7%BE%8E%E9%A2%9C%E9%9C%9C.png',
-  '%E8%85%AE%E7%BA%A2.png',
-  '%E9%AB%98%E5%85%89%E7%9B%98.png',
-  '%E9%AB%98%E5%85%89%E7%9B%98.png',
-  '%E9%AB%98%E5%85%89%E7%AC%94.png',
-  '%E8%98%91%E8%8F%87%E7%B2%89%E6%89%91.png',
-  '%E6%B0%94%E5%9E%ABBB.png',
-  '%E7%9C%BC%E7%BA%BF%E7%AC%94.png',
-];
+import { animalsIcon, foods, lingshi, lingshiIcon } from './icon';
+// 图标数组
+const animals = lingshiIcon;
 
 export const defaultGameConfig: GameConfigType = {
   // 槽容量

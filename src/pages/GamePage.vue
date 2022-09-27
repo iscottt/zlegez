@@ -146,6 +146,7 @@ onMounted(() => {
 }
 
 .random-board {
+  width: 100%;
   margin-top: 40px;
   align-items: flex-end;
   flex-direction: column !important;
@@ -154,10 +155,13 @@ onMounted(() => {
 }
 
 .random-area {
+  width: 100%;
+  height: 42px;
   margin-top: 8px;
   display: flex;
   align-items: center;
-  justify-items: flex-end;
+  justify-content: flex-end;
+  transition: all 0.5s;
 }
 
 .slot-board {

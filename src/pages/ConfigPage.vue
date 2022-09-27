@@ -45,6 +45,16 @@
             <a-input-number v-model:value="config.randomBlockNum" />
           </a-form-item>
         </a-col>
+        <a-col :span="12">
+          <a-form-item label="选择图标" name="animals">
+            <a-select v-model:value="config.animals">
+              <a-select-option value="animalsIcon">动物图标</a-select-option>
+              <a-select-option value="foods">食物图标</a-select-option>
+              <a-select-option value="lingshi">零食图标一</a-select-option>
+              <a-select-option value="lingshiIcon">零食图标二</a-select-option>
+            </a-select>
+          </a-form-item>
+        </a-col>
       </a-row>
       <a-form-item>
         <a-button size="large" type="primary" html-type="submit" style="margin-bottom: 20px" block> 开始 </a-button>
@@ -59,7 +69,7 @@ import { reactive, ref } from 'vue';
 import { FormInstance } from 'ant-design-vue';
 import { useRouter } from 'vue-router';
 import { useGlobalStore } from '../core/globalStore';
-import { defaultGameConfig } from '../core/gameConfig';
+import { IconEmun } from '../core/icon';
 
 const formRef = ref<FormInstance>();
 const router = useRouter();
@@ -69,6 +79,7 @@ const initConfig = {
   randomBlockNum: 8,
   ...customConfig,
 };
+(initConfig.animals as any) = 'lingshiIcon';
 const config = reactive<any>(initConfig);
 
 /**
@@ -77,8 +88,7 @@ const config = reactive<any>(initConfig);
  */
 const handleFinish = (values: any) => {
   config.randomBlocks = new Array(values.randomAreaNum).fill(values.randomBlockNum);
-  console.log('==================', defaultGameConfig);
-  config.animals = defaultGameConfig.animals;
+  config.animals = IconEmun[config.animals];
   setGameConfig(config);
   setCustomConfig(config);
   router.push('/game');
