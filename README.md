@@ -6,6 +6,8 @@
 
 游戏截图：
 
-![游戏截图](doc/img.png)
+![游戏截图](./doc/home.png)
+
+![游戏截图](./doc/game.png)
 
 源码参考了鱼皮大佬的仓库 [鱼了个鱼](https://github.com/liyupi/yulegeyu)
