@@ -5,9 +5,10 @@
 在线体验：http://zlegez.ethan.pub
 
 游戏截图：
-
-![游戏截图](./doc/home.png)
-
-![游戏截图](./doc/game.png)
+<br />
+<div style='text-align: center'>
+  <img width="200px" style='margin-right: 20px' src="./doc/home.png"/>
+  <img width="200px" src="./doc/game.png"/>
+</div>
 
 源码参考了鱼皮大佬的仓库 [鱼了个鱼](https://github.com/liyupi/yulegeyu)
